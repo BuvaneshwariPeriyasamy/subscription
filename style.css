@@ -1,0 +1,86 @@
+/* styles.css */
+.custom-list {
+    list-style: none;
+    padding-left: 5px;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    font-size:medium;
+}
+
+.custom-list li::before {
+    content: '\2714'; /* Unicode for heavy check mark */
+    position: absolute;
+    left: 0;
+    top: 20%;
+    transform: translateY(-20%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color:#A431A4;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+/* styles.css */
+.custom-wrong {
+    list-style: none;
+    padding-left: 5px;
+}
+
+.custom-wrong li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    font-size:medium;
+}
+.title{
+    background-color: palevioletred;
+    padding: 1px;
+}
+.flew__container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.custom-wrong li::before {
+    content: '\2716'; /* Unicode for heavy check mark */
+    position: absolute;
+    left: 0;
+    top: 20%;
+    transform: translateY(-20%);
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color:black;
+    color: #A431A4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    border: solid 2px #A431A4;
+}
+.card__desc{
+margin-top: -10px;
+}
+.card{
+    background-color: black;
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+}
+.card__title{
+    border: solid 2px white;
+    border-radius: 10px;
+    text-align: left;
+    margin: 10px;
+}
